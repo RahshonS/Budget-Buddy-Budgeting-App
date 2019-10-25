@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">BudgetBuddy</string>
+    <string name="create_button_text">Create</string>
+    <string name="view_button_text">View</string>
+    <string name="add_expense_text">Add Expense</string>
 
 </resources>
