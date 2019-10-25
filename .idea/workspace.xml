@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c0b784d8-caa8-4e95-8517-3ca8930697d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/androidTest/java/edu/temple/budgetbuddy/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/java/edu/temple/budgetbuddy/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/java/edu/temple/budgetbuddy/createActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/layout/activity_create.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/app/src/test/java/edu/temple/budgetbuddy/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BudgetBuddy/settings.gradle" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BudgetBuddy/app/src/main/java/edu/temple/budgetbuddy/createActivity.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BudgetBuddy/app/src/main/java/edu/temple/budgetbuddy/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BudgetBuddy/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/BudgetBuddy" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="793" />
+    <option name="width" value="814" />
+    <option name="height" value="907" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Budget-Buddy-Budgeting-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Budget-Buddy-Budgeting-App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Budget-Buddy-Budgeting-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Budget-Buddy-Budgeting-App" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Budget-Buddy-Budgeting-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Budget-Buddy-Budgeting-App" type="462c0819:PsiDirectoryNode" />
+              <item name="BudgetBuddy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Budget-Buddy-Budgeting-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Budget-Buddy-Budgeting-App" type="462c0819:PsiDirectoryNode" />
+              <item name="BudgetBuddy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Budget-Buddy-Budgeting-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Budget-Buddy-Budgeting-App" type="462c0819:PsiDirectoryNode" />
+              <item name="BudgetBuddy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Budget-Buddy-Budgeting-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Budget-Buddy-Budgeting-App" type="462c0819:PsiDirectoryNode" />
+              <item name="BudgetBuddy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Budget-Buddy-Budgeting-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Budget-Buddy-Budgeting-App" type="462c0819:PsiDirectoryNode" />
+              <item name="BudgetBuddy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Budget-Buddy-Budgeting-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Budget-Buddy-Budgeting-App" type="462c0819:PsiDirectoryNode" />
+              <item name="BudgetBuddy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Budget-Buddy-Budgeting-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Budget-Buddy-Budgeting-App" type="462c0819:PsiDirectoryNode" />
+              <item name="BudgetBuddy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="temple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Budget-Buddy-Budgeting-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Budget-Buddy-Budgeting-App" type="462c0819:PsiDirectoryNode" />
+              <item name="BudgetBuddy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="temple" type="462c0819:PsiDirectoryNode" />
+              <item name="budgetbuddy" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0b784d8-caa8-4e95-8517-3ca8930697d0" name="Default Changelist" comment="" />
+      <created>1572045091008</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572045091008</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.21487603" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/BudgetBuddy/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BudgetBuddy/app/src/main/java/edu/temple/budgetbuddy/createActivity.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BudgetBuddy/app/src/main/java/edu/temple/budgetbuddy/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
