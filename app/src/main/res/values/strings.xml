@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BudgetBuddy</string>
+    <string name="title_activity_payment_activity">payment_activity</string>
+</resources>
