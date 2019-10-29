@@ -7,9 +7,30 @@
     tools:context=".payment_activity">
 
     <Button
+        android:id="@+id/transportation3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#82CA9C"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="@string/transportation"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorLink="#00EE0E0E"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buy"
+        app:layout_constraintVertical_bias="0.034"
+        tools:ignore="MissingConstraints" />
+
+    <Button
         android:id="@+id/partyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#82CA9C"
         android:paddingLeft="100dp"
         android:paddingRight="100dp"
@@ -18,11 +39,11 @@
         android:textColor="#000000"
         android:textColorLink="#00EE0E0E"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/other"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/foodButton"
-        app:layout_constraintVertical_bias="0.053"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -40,10 +61,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amountText"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintVertical_bias="0.201" />
 
     <EditText
         android:id="@+id/amountText"
@@ -55,10 +76,10 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintVertical_bias="0.036" />
 
     <TextView
         android:id="@+id/amount"
@@ -76,15 +97,16 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.005" />
 
     <Button
         android:id="@+id/foodButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#82CA9C"
         android:paddingLeft="100dp"
         android:paddingRight="100dp"
@@ -96,56 +118,62 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buy"
-        app:layout_constraintVertical_bias="0.088"
+        app:layout_constraintTop_toBottomOf="@+id/transportation3"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/transportation"
+        android:id="@+id/other"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
         android:backgroundTint="#82CA9C"
         android:paddingLeft="100dp"
         android:paddingRight="100dp"
-        android:text="@string/transportation"
+        android:text="@string/other"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textColorLink="#00EE0E0E"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/partyButton"
-        app:layout_constraintVertical_bias="0.057"
+        app:layout_constraintTop_toBottomOf="@+id/descText"
+        app:layout_constraintVertical_bias="0.913"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/orOther"
-        android:layout_width="282dp"
-        android:layout_height="23dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/other"
-        android:textAlignment="textStart"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transportation"
-        app:layout_constraintVertical_bias="0.123" />
-
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="329dp"
-        android:layout_height="114dp"
+        android:id="@+id/desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/buy"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/orOther"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/descText"
+        app:layout_constraintVertical_bias="0.725" />
+
+    <TextView
+        android:id="@+id/descText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#D82E7A61"
+        android:backgroundTint="#5443A047"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/desc"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

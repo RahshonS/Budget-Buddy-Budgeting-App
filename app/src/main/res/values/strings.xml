@@ -16,6 +16,6 @@
     <string name="food">🍕☕"</string>
     <string name="party">🎉🎈"</string>
     <string name="transportation">🚌🚍"</string>
-    <string name="other">Other</string>
-
+    <string name="other">Misc.</string>
+    <string name="desc">Expense Description:</string>
 </resources>
