@@ -13,4 +13,8 @@
     <string name="amount">Enter Amount: "</string>
     <string name="logPayment">Log Payment"</string>
     <string name="buy">What did you purchase? "</string>
+    <string name="food">🍕☕"</string>
+    <string name="party">🎉🎈"</string>
+    <string name="transportation">🚌🚍"</string>
+    <string name="other">Expense Description:"</string>
 </resources>
