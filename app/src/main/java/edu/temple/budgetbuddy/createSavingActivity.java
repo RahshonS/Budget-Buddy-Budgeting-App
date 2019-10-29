@@ -20,8 +20,7 @@ public class createSavingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_saving);
 
-        String[] spinneritems= {"Basic Savings", "Casual Savings",
-                "intense savings", "E X T R E M E S A V I N G S"};
+        String[] spinneritems= {"Basic (10%)","Casual (15%)","Intense (25%)","E X T R E M E (50%)"};
 
         Button button = (Button) findViewById(R.id.createSavingsButton);
         final EditText nameText = (EditText) findViewById(R.id.nameEditText);

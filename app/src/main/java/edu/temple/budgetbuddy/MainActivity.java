@@ -20,22 +20,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] array = null;
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-
         if(getIntent().getStringExtra("profileName") == null){
         }else{
         strList.add(getIntent().getStringExtra("profileName"));
-        array = strList.toArray(new String[strList.size()]);
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                    R.layout.support_simple_spinner_dropdown_item, array);
-            spinner.setAdapter(adapter);
         }
 
-        Button newTemplate = (Button) findViewById(R.id.button4);
-        Button payment = (Button) findViewById(R.id.button);
-        Button progress = (Button) findViewById(R.id.button2);
-        Button settings = (Button) findViewById(R.id.button3);
+        String string = getString(R.string.welcome_text);
+        String string1 = getString(R.string.prog);
+        String string2 = getString(R.string.expense);
+        String string3 = getString(R.string.hist);
+
+
+        Button newTemplate = (Button) findViewById(R.id.newTemplate);
+        Button payment = (Button) findViewById(R.id.payment);
+        Button progress = (Button) findViewById(R.id.progress);
+        Button settings = (Button) findViewById(R.id.hist);
 
         newTemplate.setOnClickListener(new View.OnClickListener() {
             @Override
