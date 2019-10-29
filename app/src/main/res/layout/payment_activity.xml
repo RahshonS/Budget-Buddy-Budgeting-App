@@ -6,27 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".payment_activity">
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="106dp"
-        android:layout_height="68dp"
-        app:srcCompat="@drawable/videoSubcription"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="144dp" />
-
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:id="@+id/buy"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="304dp"
-        android:text="Purchase Description"
+        android:background="#2B4442"
+        android:backgroundTint="#5443A047"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="10sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/buy"
+        android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountText"
+        app:layout_constraintVertical_bias="0.051" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/amountText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -44,9 +45,12 @@
         android:id="@+id/amount"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="#000000"
+        android:backgroundTint="#5443A047"
         android:fontFamily="sans-serif-medium"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
+        android:lineSpacingExtra="8sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:text="@string/amount"
         android:textAlignment="textStart"
         android:textColor="#000000"
@@ -57,28 +61,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.067" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="360dp"
-        android:layout_height="102dp"
-        android:background="#006B6262"
-        android:backgroundTint="#A4504837"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.763" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="106dp"
-        android:layout_height="68dp"
-        app:srcCompat="@drawable/videoSubcription"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="144dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
