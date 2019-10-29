@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Button newTemplate = (Button) findViewById(R.id.newTemplate);
         Button payment = (Button) findViewById(R.id.payment);
         Button progress = (Button) findViewById(R.id.progress);
-        Button settings = (Button) findViewById(R.id.hist);
+        Button history = (Button) findViewById(R.id.hist);
 
         newTemplate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +48,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getBaseContext(), payment_activity.class);
+                startActivity(intent);
+            }
+        });
+
+        progress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getBaseContext(), viewProgressActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getBaseContext(), expenseHistoryActivity.class);
                 startActivity(intent);
             }
         });
