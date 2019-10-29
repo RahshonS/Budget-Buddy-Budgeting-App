@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="210dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#96E3FF"
-        android:text="View Progress"
+        android:id="@+id/progress"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#82CA9C"
+        android:text="@string/prog"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -20,11 +20,11 @@
         app:layout_constraintVertical_bias="0.629" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="210dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#7BDA7E"
-        android:text="Add/Delete Purchases"
+        android:id="@+id/payment"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#82CA9C"
+        android:text="@string/expense"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -33,11 +33,11 @@
         app:layout_constraintVertical_bias="0.408" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="210dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#00E09459"
-        android:text="settings"
+        android:id="@+id/hist"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#82CA9C"
+        android:text="@string/hist"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -46,36 +46,37 @@
         app:layout_constraintVertical_bias="0.86" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="$$$ Welcome To BudgetBuddy! $$$"
+        android:accessibilityLiveRegion="assertive"
+        android:breakStrategy="high_quality"
+        android:fontFamily="serif"
+        android:text="@string/welcome_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/newTemplate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264" />
+        app:layout_constraintVertical_bias="0.38"
+        tools:visibility="visible" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="185dp"
-        android:layout_height="57dp"
-        android:backgroundTint="#F8F5BCA6"
-        android:text="Create new\n savings template"
+        android:id="@+id/newTemplate"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#82CA9C"
+        android:text="@string/create_template"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.174" />
+        app:layout_constraintVertical_bias="0.212" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

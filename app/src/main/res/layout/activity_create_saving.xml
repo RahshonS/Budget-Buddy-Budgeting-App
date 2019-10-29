@@ -7,23 +7,35 @@
     tools:context=".createSavingActivity">
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+        android:id="@+id/selectPlan"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Select a savings plan"
+        android:background="#5443A047"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/select"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#161515"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.487" />
 
     <EditText
         android:id="@+id/nameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autofillHints="@android:string/VideoView_error_text_unknown"
         android:ems="10"
+        android:fontFamily="sans-serif-medium"
         android:inputType="textPersonName"
+        android:lineSpacingExtra="24sp"
+        android:textAlignment="center"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,26 +44,38 @@
 
     <TextView
         android:id="@+id/profNameID"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Profile Name"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/profile"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/nameEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+        android:id="@+id/income"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Monthly Income"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/income"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintVertical_bias="0.254" />
 
     <Spinner
         android:id="@+id/savingsPlanSpinner"
@@ -66,9 +90,11 @@
 
     <Button
         android:id="@+id/createSavingsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Saving"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#82CA9C"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/savingButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -82,6 +108,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
+        android:lineSpacingExtra="24sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
