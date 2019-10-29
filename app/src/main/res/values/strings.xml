@@ -12,5 +12,5 @@
     <string name="income">My Income: "</string>
     <string name="amount">Enter Amount: "</string>
     <string name="logPayment">Log Payment"</string>
-    <string name="buy">Purchase Type"</string>
+    <string name="buy">What did you purchase? "</string>
 </resources>
