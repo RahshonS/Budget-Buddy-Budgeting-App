@@ -1,28 +1,28 @@
 package edu.temple.budgetbuddy;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.content.ContentValues;
 
 import androidx.annotation.Nullable;
 
-public class DBHelperSaving extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME = "createSaving.db";
-    public static final String TABLE_NAME = "profile";
+public class DBHelperPayment extends SQLiteOpenHelper {
+    public static final String DATABASE_NAME = "payment.db";
+    public static final String TABLE_NAME = "activity";
     public static final String COL_1 = "ID";
-    public static final String COL_2 = "NAME";
-    public static final String COL_3 = "INCOME";
-    public static final String COL_4 = "SAVING";
+    public static final String COL_2 = "AMOUNT";
+    public static final String COL_3 = "DESCRIPTION";
+    public static final String COL_4 = "WHAT_PURCHASE";
 
-    public DBHelperSaving(@Nullable Context context) {
+    public DBHelperPayment(@Nullable Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + TABLE_NAME +" (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT, INCOME REAL, SAVING REAL)");
+        db.execSQL("create table " + TABLE_NAME +" (ID INTEGER PRIMARY KEY AUTOINCREMENT, AMOUNT REAL, DESCRIPTION TEXT, WHAT_PURCHASE TEXT)");
     }
 
     @Override
@@ -31,12 +31,12 @@ public class DBHelperSaving extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean insertData(String name,String income) {
+    public boolean insertData(String amount,String desc, String purchase) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL_2,name);
-        contentValues.put(COL_3,income);
-        //contentValues.put(COL_4,saving);
+        contentValues.put(COL_2,amount);
+        contentValues.put(COL_3,desc);
+        contentValues.put(COL_4,purchase);
         long result = db.insert(TABLE_NAME,null ,contentValues);
         if(result == -1)
             return false;

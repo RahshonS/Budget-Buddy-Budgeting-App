@@ -17,9 +17,9 @@ import java.math.BigDecimal;
 public class createSavingActivity extends AppCompatActivity {
 
     DBHelperSaving myDb;
-    Double saving;
-    String income;
-    Double dIncome;
+    EditText nameText, incomeText;
+    Button button;
+    Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,44 +27,23 @@ public class createSavingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_saving);
         myDb = new DBHelperSaving(this);
 
-        String[] spinneritems = {"Basic (10%)","Casual (15%)","Intense (25%)","E X T R E M E (50%)"};
-
-        Button button = (Button) findViewById(R.id.createSavingsButton);
-        final EditText nameText = (EditText) findViewById(R.id.nameEditText);
-        final EditText incomeText = (EditText) findViewById(R.id.incomeEditText);
-        final Spinner spinner = (Spinner) findViewById(R.id.savingsPlanSpinner);
+        button = (Button) findViewById(R.id.createSavingsButton);
+        nameText = (EditText) findViewById(R.id.nameEditText);
+        incomeText = (EditText) findViewById(R.id.incomeEditText);
+        spinner = (Spinner) findViewById(R.id.savingsPlanSpinner);
+        String[] spinneritems = {"Basic (10%)", "Casual (15%)", "Intense (25%)", "E X T R E M E (50%)"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(createSavingActivity.this, R.layout.support_simple_spinner_dropdown_item
-        ,spinneritems);
+                ,spinneritems);
         spinner.setAdapter(adapter);
-        income = incomeText.getText().toString();
-        dIncome = Double.parseDouble(income);
-
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-                //YOUR CODE GOES HERE. int position is the index of the spinner. For example
-                //position 0 is Basic 10%, 1 is 15% ...
-                if(position == 0){
-                    saving = dIncome * 0.10;
-                } else if(position == 1){
-                    saving = dIncome * 0.15;
-                } else if(position == 2){
-                    saving = dIncome * 0.25;
-                } else if(position == 3){
-                    saving = dIncome * 0.50;
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
-
+        createProfile();
+    }
+    public  void createProfile() {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                String income = incomeText.getText().toString();
+                Double dIncome = Double.parseDouble(income);
                 boolean fail = (BigDecimal.valueOf(dIncome).scale() > 2);
 
                 if (nameText.getText().toString().matches("") ||
@@ -75,18 +54,18 @@ public class createSavingActivity extends AppCompatActivity {
                 else if(fail){
                     Toast.makeText(createSavingActivity.this, "Only 2 decimal places allowed in Monthly Income", Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    Intent mainIntent = new Intent(getBaseContext(),MainActivity.class);
+                else {
+                    Intent mainIntent = new Intent(getBaseContext(), MainActivity.class);
                     mainIntent.putExtra("profileName", nameText.getText().toString());
                     startActivity(mainIntent);
                     boolean isInserted = myDb.insertData(nameText.getText().toString(),
-                            incomeText.getText().toString(), saving.toString());
-                    if(isInserted == true)
-                        Toast.makeText(createSavingActivity.this,"Profile Created",Toast.LENGTH_LONG).show();
+                            incomeText.getText().toString());
+                    if (isInserted == true)
+                        Toast.makeText(createSavingActivity.this, "Profile Created", Toast.LENGTH_LONG).show();
                     else
-                        Toast.makeText(createSavingActivity.this,"Profile was not Created (✖╭╮✖)",Toast.LENGTH_LONG).show();
+                        Toast.makeText(createSavingActivity.this, "Profile was not Created (✖╭╮✖)", Toast.LENGTH_LONG).show();
                 }
             }
         });
+            }
     }
-}
