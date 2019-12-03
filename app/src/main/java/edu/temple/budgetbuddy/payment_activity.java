@@ -23,6 +23,7 @@ public class payment_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.payment_activity);
         myDB = new DBHelperPayment(this);
+        myDB.insertSomeData();
 
         amountText = (EditText)findViewById(R.id.amountText);
         desc = (EditText)findViewById(R.id.desc);

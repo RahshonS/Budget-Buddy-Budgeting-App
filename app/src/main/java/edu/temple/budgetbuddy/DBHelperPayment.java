@@ -31,7 +31,7 @@ public class DBHelperPayment extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean insertData(String amount,String desc, String purchase) {
+    public boolean insertData(String amount, String desc, String purchase) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL_2,amount);
@@ -42,6 +42,16 @@ public class DBHelperPayment extends SQLiteOpenHelper {
             return false;
         else
             return true;
+    }
+
+    public void insertSomeData() {
+        insertData("15.39","Grocery from Aldi","Food Cost");
+        insertData("800.00","Flight to Orlando for GHC - will get refund","Transportation Cost");
+        insertData("63.00","Birthday party for John","Fun");
+        insertData("7.00","Samosa, cat food","Food Cost");
+        insertData("25.00","Gym Membership","Miscellaneous");
+        insertData("10.00","Ipsy","Miscellaneous");
+        insertData("14.50","SEPTA and Uber","Transportation Cost");
     }
 
     public Cursor getAllData() {

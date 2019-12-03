@@ -26,6 +26,7 @@ public class createSavingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_saving);
         myDb = new DBHelperSaving(this);
+        myDb.insertSomeData();
 
         button = (Button) findViewById(R.id.createSavingsButton);
         nameText = (EditText) findViewById(R.id.nameEditText);

@@ -1,8 +1,10 @@
 package edu.temple.budgetbuddy;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -14,15 +16,18 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     List<String> strList = new ArrayList<String>();
+    DBHelperSaving myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        myDb = new DBHelperSaving(this);
+        myDb.insertSomeData();
 
-        if(getIntent().getStringExtra("profileName") == null){
-        }else{
-        strList.add(getIntent().getStringExtra("profileName"));
+        if (getIntent().getStringExtra("profileName") == null) {
+        } else {
+            strList.add(getIntent().getStringExtra("profileName"));
         }
 
         String string = getString(R.string.welcome_text);
@@ -65,7 +70,31 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getBaseContext(), expenseHistoryActivity.class);
                 startActivity(intent);
+                Cursor res = myDb.getAllData();
+                if (res.getCount() == 0) {
+                    // show message
+                    showMessage("Error", "Nothing found");
+                    return;
+                }
+                StringBuffer buffer = new StringBuffer();
+                while (res.moveToNext()) {
+                    buffer.append("ID: " + res.getString(0) + "\n");
+                    buffer.append("Amount: " + res.getString(1) + "\n");
+                    buffer.append("Expense Description: " + res.getString(2) + "\n");
+                    buffer.append("Purchase Category: " + res.getString(3) + "\n\n");
+                }
+                // Show all data
+                showMessage("Data", buffer.toString());
             }
         });
     }
+
+        public void showMessage(String title,String Message){
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setCancelable(true);
+            builder.setTitle(title);
+            builder.setMessage(Message);
+            builder.show();
+        }
 }
+

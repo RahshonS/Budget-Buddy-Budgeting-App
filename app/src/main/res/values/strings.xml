@@ -18,4 +18,7 @@
     <string name="transportation">🚌🚍"</string>
     <string name="other">Misc.</string>
     <string name="desc">Expense Description:</string>
+    <string name="someProf">List Profiles:</string>
+    <string name="someExpense">List Expenses:</string>
+    <string name="some_hint">Search</string>
 </resources>

@@ -2,6 +2,7 @@ package edu.temple.budgetbuddy;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.ContentValues;
@@ -15,6 +16,9 @@ public class DBHelperSaving extends SQLiteOpenHelper {
     public static final String COL_2 = "NAME";
     public static final String COL_3 = "INCOME";
     public static final String COL_4 = "SAVING";
+
+    private SQLiteDatabase mDb;
+
 
     public DBHelperSaving(@Nullable Context context) {
         super(context, DATABASE_NAME, null, 1);
@@ -42,6 +46,16 @@ public class DBHelperSaving extends SQLiteOpenHelper {
             return false;
         else
             return true;
+    }
+
+    public void insertSomeData() {
+        insertData("June 2019","198.40");
+        insertData("Sign-in Bonus","10000.00");
+        insertData("October 2019","50.00");
+        insertData("Gift Card - June 2018","100.00");
+        insertData("January 2019","1943.00");
+        insertData("Cash Gift - December 2018","650.00");
+        insertData("February 2018","4000.00");
     }
 
     public Cursor getAllData() {
