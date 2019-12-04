@@ -15,7 +15,6 @@ import android.widget.Toast;
 import java.math.BigDecimal;
 
 public class createSavingActivity extends AppCompatActivity {
-
     DBHelperSaving myDb;
     EditText nameText, incomeText;
     Button button;
@@ -26,7 +25,7 @@ public class createSavingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_saving);
         myDb = new DBHelperSaving(this);
-        myDb.insertSomeData();
+
 
         button = (Button) findViewById(R.id.createSavingsButton);
         nameText = (EditText) findViewById(R.id.nameEditText);

@@ -16,13 +16,13 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     List<String> strList = new ArrayList<String>();
-    DBHelperSaving myDb;
+    DBHelperPayment myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        myDb = new DBHelperSaving(this);
+        myDb = new DBHelperPayment(this);
         myDb.insertSomeData();
 
         if (getIntent().getStringExtra("profileName") == null) {
@@ -68,8 +68,6 @@ public class MainActivity extends AppCompatActivity {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), expenseHistoryActivity.class);
-                startActivity(intent);
                 Cursor res = myDb.getAllData();
                 if (res.getCount() == 0) {
                     // show message
