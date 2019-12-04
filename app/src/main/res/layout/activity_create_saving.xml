@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".createSavingActivity">
 
     <TextView
         android:id="@+id/selectPlan"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#5443A047"
+        android:background="#91D3DB"
         android:fontFamily="sans-serif-medium"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -51,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
         android:background="#000000"
-        android:backgroundTint="#5443A047"
+        android:backgroundTint="#91D3DB"
         android:fontFamily="sans-serif-medium"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -68,7 +69,7 @@
         android:id="@+id/income"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#5443A047"
+        android:background="#91D3DB"
         android:fontFamily="sans-serif-medium"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -98,7 +99,7 @@
         android:id="@+id/createSavingsButton"
         android:layout_width="340dp"
         android:layout_height="90dp"
-        android:backgroundTint="#82CA9C"
+        android:backgroundTint="#91D3DB"
         android:fontFamily="sans-serif-medium"
         android:text="@string/savingButton"
         app:layout_constraintBottom_toBottomOf="parent"

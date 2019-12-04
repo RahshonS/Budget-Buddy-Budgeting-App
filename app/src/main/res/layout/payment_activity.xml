@@ -10,7 +10,7 @@
         android:id="@+id/transportation3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#82CA9C"
+        android:backgroundTint="#3F51B5"
         android:paddingLeft="100dp"
         android:paddingRight="100dp"
         android:text="@string/transportation"
@@ -22,14 +22,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426"
+        app:layout_constraintVertical_bias="0.566"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/partyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#82CA9C"
+        android:backgroundTint="#FFEB3B"
         android:paddingLeft="100dp"
         android:paddingRight="100dp"
         android:text="@string/party"
@@ -49,7 +49,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#2B4442"
-        android:backgroundTint="#5443A047"
+        android:backgroundTint="#91D3DB"
         android:fontFamily="sans-serif-medium"
         android:lineSpacingExtra="10sp"
         android:paddingLeft="10dp"
@@ -84,7 +84,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#000000"
-        android:backgroundTint="#5443A047"
+        android:backgroundTint="#91D3DB"
         android:fontFamily="sans-serif-medium"
         android:lineSpacingExtra="8sp"
         android:paddingLeft="10dp"
@@ -104,7 +104,7 @@
         android:id="@+id/foodButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#82CA9C"
+        android:backgroundTint="#DD0A29"
         android:paddingLeft="100dp"
         android:paddingRight="100dp"
         android:text="@string/food"
@@ -116,14 +116,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573"
+        app:layout_constraintVertical_bias="0.43"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/other"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#82CA9C"
+        android:backgroundTint="#9C27B0"
         android:paddingLeft="100dp"
         android:paddingRight="100dp"
         android:text="@string/other"
@@ -160,7 +160,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:background="#D82E7A61"
-        android:backgroundTint="#5443A047"
+        android:backgroundTint="#91D3DB"
         android:fontFamily="sans-serif-medium"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -171,5 +171,14 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amountText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="682dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

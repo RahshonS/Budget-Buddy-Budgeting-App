@@ -31,6 +31,7 @@ public class createSavingActivity extends AppCompatActivity {
         spinner.setAdapter(adapter);
 
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
 
@@ -51,7 +52,9 @@ public class createSavingActivity extends AppCompatActivity {
                     mainIntent.putExtra("profileName", nameText.getText().toString());
                     startActivity(mainIntent);
                 }
+
             }
+
         });
     }
 }
