@@ -8,35 +8,42 @@
 
     <Button
         android:id="@+id/viewPie"
-        android:layout_width="217dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="120dp"
-        android:text="View Pie"
+        android:layout_width="384dp"
+        android:layout_height="94dp"
+        android:backgroundTint="#91D3DB"
+        android:text="@string/viewPie"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
 
     <Button
         android:id="@+id/viewLine"
-        android:layout_width="218dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="88dp"
-        android:text="View Line (Month)"
+        android:layout_width="384dp"
+        android:layout_height="94dp"
+        android:backgroundTint="#91D3DB"
+        android:text="@string/viewLine"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewPie" />
+        app:layout_constraintTop_toBottomOf="@+id/viewPie"
+        app:layout_constraintVertical_bias="0.273" />
 
     <Button
         android:id="@+id/viewBar"
-        android:layout_width="211dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="100dp"
-        android:text="View Bar"
+        android:layout_width="384dp"
+        android:layout_height="94dp"
+        android:backgroundTint="#91D3DB"
+        android:padding="@dimen/fab_margin"
+        android:text="@string/viewBar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewLine"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.455" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

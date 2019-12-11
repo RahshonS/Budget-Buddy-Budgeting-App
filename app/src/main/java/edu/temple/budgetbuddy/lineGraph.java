@@ -80,16 +80,10 @@ public class lineGraph extends AppCompatActivity {
 
         /*Setting x axis vals
         String[] values = new String[] {"Jan", "Feb", "Mar", "Apr", "May"};
-
         XAxis xaxis = lineChart.getXAxis();
         xaxis.setValueFormatter(new MyXAxisValueFormatter(values));
         xaxis.setGranularity(1f);
         */
-
-
-
-
-
-
     }
 }
+

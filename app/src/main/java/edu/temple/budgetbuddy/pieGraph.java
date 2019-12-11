@@ -24,9 +24,10 @@ import java.util.ArrayList;
 public class pieGraph extends AppCompatActivity {
 
     public static String TAG = "PieActivity";
-    public float x = 25.3f;
 
-    public float[] yData = {x, 10.2f, 42.32f, 55.1f, 53.78f, 13.64f, 23.1f};
+
+    public float[] yData = {25.3f, 10.2f, 42.32f, 55.1f, 53.78f, 13.64f, 23.1f};
+
 
     public String[] xData = {"Food", "Trans", "Online", "Clothing", "School Supplies", "House Supplies", "Misc"};
 
@@ -72,14 +73,14 @@ public class pieGraph extends AppCompatActivity {
 
         //add colours
         ArrayList<Integer> colors = new ArrayList<>();
-        colors.add(Color.parseColor("#008BB4"));
-        colors.add(Color.parseColor("#00A3B4"));
-        //colors.add(Color.parseColor("#2572B3"));
-        colors.add(Color.parseColor("#3D4645"));
-        colors.add(Color.parseColor("#00B065"));
-        colors.add(Color.parseColor("#0083B1"));
-        colors.add(Color.parseColor("#00B08A"));
-        colors.add(Color.parseColor("#5AFFDC"));
+        colors.add(Color.GRAY);
+        colors.add(Color.RED);
+        colors.add(Color.BLUE);
+        colors.add(Color.GREEN);
+        colors.add(Color.CYAN);
+        colors.add(Color.YELLOW);
+        colors.add(Color.MAGENTA);
+
 
         pieDataSet.setColors(colors);
 
@@ -104,8 +105,7 @@ public class pieGraph extends AppCompatActivity {
 
             int pos1 = e.toString().indexOf("(sum): ");
             String expenses = e.toString().substring(pos1 + 7);
-
-
+            
             for(int i = 0; i < yData.length; i++){
                 if(yData[i] == Float.parseFloat(expenses)){
                     pos1 = i;
@@ -116,13 +116,10 @@ public class pieGraph extends AppCompatActivity {
             Toast.makeText(this, "Category " + category + "\n" + "Amount Spent: $" +
                     expenses, Toast.LENGTH_LONG).show();
         }
-
         @Override
         public void onNothingSelected() {
-
         }
     });
-
      */
 
 }
