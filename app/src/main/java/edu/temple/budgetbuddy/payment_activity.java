@@ -20,7 +20,6 @@ public class payment_activity extends AppCompatActivity {
     Button other;
 
     private EditText userInput;
-    private TextView textView;
     private static final String TAG = "payment_activity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
