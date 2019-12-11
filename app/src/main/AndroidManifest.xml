@@ -12,7 +12,7 @@
         <activity android:name=".barGraph"></activity>
         <activity android:name=".lineGraph" />
         <activity android:name=".pieGraph" />
-        <activity android:name=".viewProgressActivity"></activity>
+        <activity android:name=".viewProgressActivity" />
         <activity android:name=".expenseHistoryActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".viewSavingsActivity" />

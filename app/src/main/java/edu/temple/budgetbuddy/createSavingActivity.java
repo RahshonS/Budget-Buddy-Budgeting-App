@@ -39,6 +39,7 @@ public class createSavingActivity extends AppCompatActivity {
     }
     public  void createProfile() {
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
 
@@ -65,7 +66,9 @@ public class createSavingActivity extends AppCompatActivity {
                     else
                         Toast.makeText(createSavingActivity.this, "Profile was not Created (✖╭╮✖)", Toast.LENGTH_LONG).show();
                 }
+
             }
+
         });
             }
     }

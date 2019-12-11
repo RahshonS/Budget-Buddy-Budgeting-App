@@ -18,6 +18,7 @@ public class viewProgressActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_progress);
         myDb = new DBHelperSaving(this);
 
+
         Button viewPie = findViewById(R.id.viewPie);
         Button viewBar = findViewById(R.id.viewBar);
         Button viewLine = findViewById(R.id.viewLine);

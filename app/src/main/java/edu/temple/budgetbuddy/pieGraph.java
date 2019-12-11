@@ -25,7 +25,9 @@ public class pieGraph extends AppCompatActivity {
 
     public static String TAG = "PieActivity";
 
+
     public float[] yData = {25.3f, 10.2f, 42.32f, 55.1f, 53.78f, 13.64f, 23.1f};
+
 
     public String[] xData = {"Food", "Trans", "Online", "Clothing", "School Supplies", "House Supplies", "Misc"};
 
@@ -35,7 +37,6 @@ public class pieGraph extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pie_graph);
-
 
         pieChart = (PieChart) findViewById(R.id.pieChart);
 
@@ -80,6 +81,7 @@ public class pieGraph extends AppCompatActivity {
         colors.add(Color.YELLOW);
         colors.add(Color.MAGENTA);
 
+
         pieDataSet.setColors(colors);
 
         //add legend
@@ -100,8 +102,10 @@ public class pieGraph extends AppCompatActivity {
             Log.d(TAG, "onValueSelected: Value Select from chart");
             Log.d(TAG, "onValueSelected: " + e.toString());   //show what e looks like
             Log.d(TAG, "onValueSelected: " + h.toString());   //show what h looks like
+
             int pos1 = e.toString().indexOf("(sum): ");
             String expenses = e.toString().substring(pos1 + 7);
+            
             for(int i = 0; i < yData.length; i++){
                 if(yData[i] == Float.parseFloat(expenses)){
                     pos1 = i;
@@ -119,3 +123,4 @@ public class pieGraph extends AppCompatActivity {
      */
 
 }
+
